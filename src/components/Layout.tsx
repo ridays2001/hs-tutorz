@@ -10,8 +10,11 @@ interface Props {
 const Layout: React.FC<Props> = ({ children, page }) => (
 	<>
 		<Bootstrap />
-		<Nav active={page} />
-		{children}
+		{/* Add a container to prevent things from overflowing. */}
+		<main className='container-fluid'>
+			<Nav active={page} />
+			{children}
+		</main>
 	</>
 );
 
