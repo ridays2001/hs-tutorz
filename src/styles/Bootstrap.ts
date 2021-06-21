@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import { colors, devices } from '../theme';
+import { devices } from '../theme';
 
 const Bootstrap = createGlobalStyle`
 :root {
@@ -884,14 +884,6 @@ button, .btn {
 	button, .btn {
 		transition: none;
 	}
-}
-.btn-primary {
-	background-color: ${colors.primary};
-	color: #ffffff;
-}
-.btn-primary:focus {
-	outline: none;
-	box-shadow: 0 0 0 0.25rem ${colors.highlight};
 }
 .card {
 	position: relative;
