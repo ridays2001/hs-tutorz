@@ -1,7 +1,8 @@
 import React from 'react';
 import Bootstrap from '../styles/Bootstrap';
-import Nav from './Nav';
+import Global from '../styles/Global';
 import type { Pages } from './Nav';
+import Nav from './Nav';
 
 interface Props {
 	page: Pages;
@@ -10,6 +11,7 @@ interface Props {
 const Layout: React.FC<Props> = ({ children, page }) => (
 	<>
 		<Bootstrap />
+		<Global />
 		{/* Add a container to prevent things from overflowing. */}
 		<main className='container-fluid'>
 			<Nav active={page} />
