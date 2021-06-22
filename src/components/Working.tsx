@@ -16,7 +16,7 @@ interface StepProps {
 const Step = ({ color, icon, link, linkText, para, title, index }: StepProps) => (
 	<Fragment>
 		<WorkStep className='row justify-content-evenly' style={{ backgroundColor: color }} even={(index % 2) as 0 | 1}>
-			<div className='icon col-md-6 col-lg-4 d-flex align-items-center'>{icon}</div>
+			<div className='icon mx-auto mx-md-0 col-lg-4 d-flex align-items-center'>{icon}</div>
 
 			<div className='col-md-6 col-lg-5'>
 				<h4 className='text-center'>{title}</h4>
