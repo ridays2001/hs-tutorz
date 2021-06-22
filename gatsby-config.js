@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const desc = 'Online Economics tutorials for high school and college level.';
 
 module.exports = {
