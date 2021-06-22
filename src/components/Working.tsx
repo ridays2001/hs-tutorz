@@ -1,34 +1,8 @@
 import { Link } from 'gatsby';
 import type { CSSProperties } from 'react';
 import React, { Fragment } from 'react';
-import styled from 'styled-components';
-import { devices, shadows } from '../theme';
+import WorkStep from '../styles/WorkStep';
 import { ArrowDownIcon, BookingIcon, ContactIcon, LearningIcon, SelectIcon } from './icons';
-
-interface StyleProps {
-	even: 0 | 1;
-}
-const StepStyle = styled.div<StyleProps>`
-	margin-top: 0;
-	margin-bottom: 0;
-	padding: 3em 1em;
-
-	.icon {
-		margin-bottom: 2.5em;
-	}
-
-	${devices.md} {
-		margin-top: 2em;
-		margin-bottom: 2em;
-		border-radius: 21px;
-		box-shadow: ${shadows.layer2};
-
-		.icon {
-			margin-bottom: 0;
-			order: ${({ even }) => (even ? -1 : 1)};
-		}
-	}
-`;
 
 interface StepProps {
 	color: string;
@@ -41,11 +15,7 @@ interface StepProps {
 }
 const Step = ({ color, icon, link, linkText, para, title, index }: StepProps) => (
 	<Fragment>
-		<StepStyle
-			className='row justify-content-evenly'
-			style={{ backgroundColor: color }}
-			even={(index % 2) as 0 | 1}
-		>
+		<WorkStep className='row justify-content-evenly' style={{ backgroundColor: color }} even={(index % 2) as 0 | 1}>
 			<div className='icon col-md-6 col-lg-4 d-flex align-items-center'>{icon}</div>
 
 			<div className='col-md-6 col-lg-5'>
@@ -53,7 +23,7 @@ const Step = ({ color, icon, link, linkText, para, title, index }: StepProps) =>
 				{para}
 				{link && <Link to={link}>{linkText} ↗</Link>}
 			</div>
-		</StepStyle>
+		</WorkStep>
 		{index !== 3 ? <ArrowDownIcon className='d-none d-md-inline' width={48} height={48} /> : ''}
 	</Fragment>
 );
