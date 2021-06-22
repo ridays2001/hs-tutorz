@@ -75,11 +75,11 @@ const Nav = ({ active }: Props) => {
 				<Link
 					to='/'
 					style={{ textDecoration: 'none', color: '#000000', backgroundColor: 'inherit !import' }}
-					className='col-md-3 col-xl-2 text-start ps-5'
+					className='col-md-4 col-xxl-3 text-start ps-5'
 				>
 					<h2>HS Tutorialz</h2>
 				</Link>
-				<nav className='col-md-7 col-lg-6 col-xl-5 col-xxl-4 offset-lg-2 offset-xl-4 offset-xxl-5 d-flex justify-content-evenly align-items-center'>
+				<nav className='col-md-7 col-lg-6 col-xl-5 col-xxl-4 d-flex justify-content-evenly align-items-center'>
 					{NavLinks}
 				</nav>
 			</AppHeader>
