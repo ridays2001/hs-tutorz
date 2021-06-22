@@ -3,6 +3,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
+import TutOpts from '../components/TutOpts';
 import Working from '../components/Working';
 import { text } from '../theme';
 
@@ -59,6 +60,10 @@ const IndexPage = () => (
 		{/* Intro Para */}
 
 		<Working style={{ marginTop: '10vh' }} />
+
+		<TutOpts />
+
+		{/* Testimonials */}
 	</Layout>
 );
 
