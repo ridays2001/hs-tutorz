@@ -107,7 +107,7 @@ const Working = ({ style }: MainProps) => (
 		</div>
 
 		{steps.map((props, i) => (
-			<Step {...props} index={i} />
+			<Step {...props} index={i} key={props.title} />
 		))}
 	</div>
 );
