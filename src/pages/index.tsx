@@ -1,7 +1,7 @@
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import Working from '../components/Working';
 import { text } from '../theme';
