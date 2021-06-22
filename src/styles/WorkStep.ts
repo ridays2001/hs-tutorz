@@ -11,6 +11,19 @@ const WorkStep = styled.div<Props>`
 
 	.icon {
 		margin-bottom: 2.5em;
+		width: 75%;
+	}
+
+	${devices.xs} {
+		.icon {
+			width: 50%;
+		}
+	}
+
+	${devices.sm} {
+		.icon {
+			width: 40%;
+		}
 	}
 
 	${devices.md} {
