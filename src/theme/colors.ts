@@ -20,8 +20,8 @@ export const text = {
 };
 
 export const shadows = {
-	layer1: '0 2px 4px rgba(112, 144, 176, 0.1), 0 4px 8px rgba(112, 144, 176, 0.12)',
-	layer2: '0 4px 8px rgba(112, 144, 176, 0.12), 0 8px 16px rgba(112, 144, 176, 0.16)',
-	layer3: '0 8px 16px rgba(112, 144, 176, 0.16), 0 16px 32px rgba(112, 144, 176, 0.2)',
-	layer4: '0 16px 32px rgba(112, 144, 176, 0.2), 0 20px 40px rgba(112, 144, 176, 0.25)'
+	layer0: '0 2px 4px rgba(112, 144, 176, 0.1), 0 4px 8px rgba(112, 144, 176, 0.12)',
+	layer1: '0 4px 8px rgba(112, 144, 176, 0.12), 0 8px 16px rgba(112, 144, 176, 0.16)',
+	layer2: '0 8px 16px rgba(112, 144, 176, 0.16), 0 16px 32px rgba(112, 144, 176, 0.2)',
+	layer3: '0 16px 32px rgba(112, 144, 176, 0.2), 0 20px 40px rgba(112, 144, 176, 0.25)'
 };
