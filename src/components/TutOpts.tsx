@@ -2,7 +2,7 @@ import React from 'react';
 import TutOption from '../styles/TutOption';
 
 const TutOpts = () => (
-	<div className='col-md-10 col-lg-9 mx-auto text-center' style={{ marginBottom: '15vh' }}>
+	<div className='col-md-10 col-lg-9 mx-auto text-center' style={{ marginBottom: '2.5em' }}>
 		<div className='row justify-content-evenly mb-3'>
 			<h1>Tutoring Options</h1>
 		</div>

@@ -3,11 +3,14 @@ import { devices, shadows } from '../theme';
 
 interface Props {
 	even: 0 | 1;
+	color: string;
+	border: string;
 }
 const WorkStep = styled.div<Props>`
 	margin-top: 0;
 	margin-bottom: 0;
 	padding: 3em 1em;
+	background-color: ${({ color }) => color};
 
 	.icon {
 		margin-bottom: 2.5em;
@@ -31,6 +34,7 @@ const WorkStep = styled.div<Props>`
 		margin-bottom: 2em;
 		border-radius: 21px;
 		box-shadow: ${shadows.layer2};
+		border: 2px solid ${({ border }) => border || 'transparent'};
 
 		.icon {
 			margin-bottom: 0;

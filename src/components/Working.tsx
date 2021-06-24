@@ -6,6 +6,7 @@ import { ArrowDownIcon, BookingIcon, ContactIcon, LearningIcon, SelectIcon } fro
 
 interface StepProps {
 	color: string;
+	border: string;
 	icon?: JSX.Element;
 	title?: string;
 	para?: JSX.Element;
@@ -13,9 +14,9 @@ interface StepProps {
 	linkText?: string;
 	index: number;
 }
-const Step = ({ color, icon, link, linkText, para, title, index }: StepProps) => (
+const Step = ({ border, color, icon, link, linkText, para, title, index }: StepProps) => (
 	<Fragment>
-		<WorkStep className='row justify-content-evenly' style={{ backgroundColor: color }} even={(index % 2) as 0 | 1}>
+		<WorkStep className='row justify-content-evenly' color={color} border={border} even={(index % 2) as 0 | 1}>
 			<div className='icon mx-auto mx-md-0 col-lg-4 d-flex align-items-center'>{icon}</div>
 
 			<div className='col-md-6 col-lg-5'>
@@ -30,6 +31,7 @@ const Step = ({ color, icon, link, linkText, para, title, index }: StepProps) =>
 
 interface StepType {
 	color: string;
+	border: string;
 	icon: JSX.Element;
 	title: string;
 	para: JSX.Element;
@@ -40,6 +42,7 @@ const steps: Array<StepType> = [
 	{
 		title: 'Contact',
 		color: '#F7CAC9',
+		border: '#C3A09F',
 		icon: <ContactIcon />,
 		para: (
 			<p>
@@ -55,6 +58,7 @@ const steps: Array<StepType> = [
 	{
 		title: 'Book A Demo',
 		color: '#FDFD96',
+		border: '#CACA77',
 		icon: <BookingIcon />,
 		para: (
 			<p>
@@ -70,6 +74,7 @@ const steps: Array<StepType> = [
 	{
 		title: 'Select A Package',
 		color: '#87DAD5',
+		border: '#578D8A',
 		icon: <SelectIcon />,
 		para: (
 			<p>
@@ -85,6 +90,7 @@ const steps: Array<StepType> = [
 	{
 		title: 'Start Learning',
 		color: '#CAA2FF',
+		border: '#8D71B2',
 		icon: <LearningIcon />,
 		para: (
 			<p>
