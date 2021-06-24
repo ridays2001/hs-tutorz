@@ -33,7 +33,7 @@ const WorkStep = styled.div<Props>`
 		margin-top: 2em;
 		margin-bottom: 2em;
 		border-radius: 21px;
-		box-shadow: ${shadows.layer2};
+		box-shadow: ${shadows.layer1};
 		border: 2px solid ${({ border }) => border || 'transparent'};
 
 		.icon {

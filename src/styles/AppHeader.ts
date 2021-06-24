@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colors, shadows, text } from '../theme';
+import { colors, shadows } from '../theme';
 
 interface Props {
 	bg: 1 | 0;
@@ -7,7 +7,7 @@ interface Props {
 
 const AppHeader = styled.header<Props>`
 	background-color: ${({ bg }) => (bg ? colors.white3 : 'inherit')};
-	box-shadow: ${({ bg }) => (bg ? shadows.layer3 : 'none')};
+	box-shadow: ${({ bg }) => (bg ? shadows.layer2 : 'none')};
 	#mobile-nav {
 		height: 100vh;
 		position: fixed;
