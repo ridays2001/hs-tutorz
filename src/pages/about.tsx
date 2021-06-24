@@ -126,9 +126,12 @@ const AboutPage = () => (
 
 		{/* 2 section layout. Image + text. */}
 		<FounderSection className='row col-md-9 text-start mx-auto'>
-			<aside className='col-md-6 text-center' id='pfp'>
+			<aside className='col-md-9 mx-md-auto mx-xl-0 col-xl-6 text-center' id='pfp'>
 				<StaticImage
 					src='../images/pfp.png'
+					style={{
+						filter: 'grayscale(0.4)'
+					}}
 					alt='My Picture'
 					layout='constrained'
 					aspectRatio={1 / 1}
@@ -136,7 +139,7 @@ const AboutPage = () => (
 					placeholder='dominantColor'
 				/>
 			</aside>
-			<aside className='col-md-6' id='about'>
+			<aside className='col-xl-6' id='about'>
 				<p>
 					Even before I was a professional teacher, I was always teaching things to children and my peers.
 					That led to many people suggesting me to take on teaching as a profession but I always had some or
