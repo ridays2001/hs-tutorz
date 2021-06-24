@@ -6,6 +6,7 @@ import SEO from '../components/SEO';
 import Testimonials from '../components/Testimonials';
 import TutOpts from '../components/TutOpts';
 import Working from '../components/Working';
+import Intro from '../styles/Intro';
 import { text } from '../theme';
 
 const IndexPage = () => (
@@ -62,10 +63,27 @@ const IndexPage = () => (
 			</div>
 		</div>
 
-		{/* Intro Para */}
-
-		<Working style={{ marginTop: '10vh' }} />
-
+		<h1 className='text-center mt-5'>Who We Are:</h1>
+		<Intro className='col-md-9 col-lg-8 col-xl-6 mx-auto'>
+			<p>
+				HS Tutorialz began with a simple idea that the lecture hall/ classroom setting was insufficient for
+				unlocking the learning potential of each student. We are resourceful, patient, and well equipped to
+				cater to a variety of different learning styles. With specializing in Economics, Business Studies and
+				English, we tutor students at High School and Undergraduate level.
+			</p>
+			<p>
+				At HS Tutorialz, learning is tailored to your needs. Our primary small group courses give students the
+				opportunity to share, speak up and build communication skills alongside their academic knowledge.
+				Private one-on-one programs offer a targeted approach to individual learning needs.
+			</p>
+			<p>
+				No matter whether you are in a private one on one tutoring or a part of a group, we always make sure you
+				understand your concepts well. Our motto is to target conceptual understanding to improve academic
+				grades.
+			</p>
+			<p>So don’t delay, Sign up to get better grades today!</p>
+		</Intro>
+		<Working style={{ marginTop: '2em' }} />
 		<TutOpts />
 
 		{/* Testimonials */}
