@@ -7,7 +7,7 @@ module.exports = {
 		title: 'HS Tutorialz',
 		description: desc,
 		// Change this URL later!
-		siteUrl: 'http://192.168.29.xx'
+		siteUrl: 'https://hs-tutorialz.netlify.app'
 	},
 	plugins: [
 		'gatsby-plugin-styled-components',
