@@ -105,7 +105,7 @@ const AboutPage = () => (
 				</ul>
 			</section>
 
-			<h2 className='text-center my-3'>Our Offerings:</h2>
+			<h2 className='text-center my-3'>What You Get:</h2>
 
 			{offerings.map(({ border, color, icon, para, title }, i) => (
 				<OfferingBox
