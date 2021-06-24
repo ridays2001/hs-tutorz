@@ -31,7 +31,7 @@ export const OfferingBox = styled.section<OfferingProps>`
 		margin-top: 2em;
 		margin-bottom: 2em;
 		border-radius: 21px;
-		box-shadow: ${shadows.layer2};
+		box-shadow: ${shadows.layer1};
 		border: 2px solid ${({ border }) => border || 'transparent'};
 
 		.icon {
@@ -44,7 +44,7 @@ export const OfferingBox = styled.section<OfferingProps>`
 export const CompanySection = styled.section`
 	#about {
 		border-radius: 21px;
-		box-shadow: ${shadows.layer2};
+		box-shadow: ${shadows.layer1};
 		padding: 2.5em;
 		margin-top: 2em;
 		margin-bottom: 2em;
@@ -66,11 +66,20 @@ export const FounderSection = styled.section`
 	border-radius: 21px;
 	margin-bottom: 2em;
 	padding: 2em;
+	color: #ffffff;
 
 	#about {
-		background-color: rgba(255, 255, 255, 0.85);
-		border-radius: 14px;
-		padding: 1.5em;
+		margin-top: 1.25em;
+	}
+
+	${devices.xl} {
+		#about {
+			margin-top: 0;
+			color: #000000;
+			background-color: rgba(255, 255, 255, 0.85);
+			border-radius: 14px;
+			padding: 1.5em;
+		}
 	}
 
 	#pfp {
