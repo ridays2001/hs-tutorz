@@ -9,6 +9,7 @@ interface OfferingProps {
 export const OfferingBox = styled.section<OfferingProps>`
 	background-color: ${({ color }) => color};
 	padding: 2.5em;
+	box-shadow: ${shadows.layer1};
 
 	.icon {
 		margin-bottom: 2.5em;
@@ -31,7 +32,6 @@ export const OfferingBox = styled.section<OfferingProps>`
 		margin-top: 2em;
 		margin-bottom: 2em;
 		border-radius: 21px;
-		box-shadow: ${shadows.layer1};
 		border: 2px solid ${({ border }) => border || 'transparent'};
 
 		.icon {
@@ -43,14 +43,20 @@ export const OfferingBox = styled.section<OfferingProps>`
 
 export const CompanySection = styled.section`
 	#about {
-		border-radius: 21px;
 		box-shadow: ${shadows.layer1};
 		padding: 2.5em;
 		margin-top: 2em;
 		margin-bottom: 2em;
 		background-color: #e0acd5;
-		border: 2px solid #93718c;
 	}
+
+	${devices.md} {
+		#about {
+			border-radius: 21px;
+			border: 2px solid #93718c;
+		}
+	}
+
 	h6.sub {
 		margin-top: 2em;
 		font-weight: 600;
@@ -62,14 +68,18 @@ export const CompanySection = styled.section`
 
 export const FounderSection = styled.section`
 	background-color: ${colors.primary};
-	border: 2px solid ${colors.dark};
-	border-radius: 21px;
-	margin-bottom: 2em;
 	padding: 2em;
+	margin-bottom: 2em;
 	color: #ffffff;
+	box-shadow: ${shadows.layer1};
 
 	#about {
 		margin-top: 1.25em;
+	}
+
+	${devices.md} {
+		border: 2px solid ${colors.dark};
+		border-radius: 21px;
 	}
 
 	${devices.xl} {
@@ -86,9 +96,10 @@ export const FounderSection = styled.section`
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		border-radius: 14px;
 	}
 
-	img {
+	#pfp img {
 		border-radius: 14px;
 	}
 `;

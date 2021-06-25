@@ -51,7 +51,7 @@ const AboutPage = () => (
 		<CompanySection className='col-md-9 col-lg-8 col-xl-6 mx-auto mb-5 text-center'>
 			<h1 className='my-3'>About Us</h1>
 
-			<section className='row text-start mx-auto' id='about'>
+			<section className='row text-start mx-md-auto' id='about'>
 				HS Tutorialz began with a simple idea that the lecture hall/ classroom setting was insufficient for
 				unlocking the learning potential of each student. But to an industry that relied on conformity, the idea
 				of building a peer-to-peer tutoring model that acknowledged the unique learning style of the individual
@@ -125,7 +125,7 @@ const AboutPage = () => (
 		<h2 className='text-center my-3'>The Founder</h2>
 
 		{/* 2 section layout. Image + text. */}
-		<FounderSection className='row col-md-9 text-start mx-auto'>
+		<FounderSection className='row col-md-9 mx-md-auto text-start'>
 			<aside className='col-md-9 mx-md-auto mx-xl-0 col-xl-6 text-center' id='pfp'>
 				<StaticImage
 					src='../images/pfp.png'
