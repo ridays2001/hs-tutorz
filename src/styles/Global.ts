@@ -5,6 +5,7 @@ const Global = createGlobalStyle`
 	body {
 		font-family: 'Playfair Display';
 		letter-spacing: 0.75px;
+		background-color: #fafafa;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
