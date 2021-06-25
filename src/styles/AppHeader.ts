@@ -12,6 +12,7 @@ const AppHeader = styled.header<Props>`
 		height: 100vh;
 		position: fixed;
 		z-index: 1;
+		top: 0;
 		right: -100px;
 		background-color: ${colors.white1};
 		overflow: hidden;
