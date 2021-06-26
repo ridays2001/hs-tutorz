@@ -46,7 +46,7 @@ const IndexPage = () => (
 				<div className='row mx-auto'>
 					<div className='row mx-auto justify-content-center my-3'>
 						<div className='text-center'>
-							<Link className='btn btn-primary btn-lg' to='/contact'>
+							<Link className='btn btn-primary btn-lg' to='/plans/demo'>
 								Book A Demo
 							</Link>
 						</div>
