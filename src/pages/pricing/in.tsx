@@ -91,7 +91,7 @@ const PricingPage = () => {
 	return (
 		<Layout page='pricing'>
 			<SEO title='Pricing' description='The pricing page.' />
-			<PricingSection className='col-md-9 mx-md-auto'>
+			<PricingSection className='col-md-10 col-xl-9 mx-md-auto'>
 				<h1 className='text-center'>Pricing Plans</h1>
 
 				{plans.map(
@@ -106,9 +106,9 @@ const PricingPage = () => {
 						groupMonth,
 						single
 					}) => (
-						<section className='block' key={id}>
+						<section className='block my-4' key={id}>
 							<h2 className='text-center'>{level}</h2>
-							<div className='row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 align-items-start justify-content-center'>
+							<div className='row row-cols-1 row-cols-md-2 row-cols-xl-3 row-cols-xxl-4 align-items-start justify-content-center'>
 								{/* 1 on 1 sessions */}
 								<div className='d-flex col align-self-stretch' id='1o1'>
 									<div className='card w-100'>
@@ -123,7 +123,7 @@ const PricingPage = () => {
 												<p className='mt-4'>
 													Or pay monthly
 													<br />
-													<button className='btn btn-3 price'>
+													<button className='btn btn-2 price'>
 														INR ₹ {blockMonth.toLocaleString()}
 													</button>
 												</p>
@@ -154,7 +154,7 @@ const PricingPage = () => {
 												<p className='mt-4'>
 													Or pay monthly
 													<br />
-													<button className='btn btn-3 price'>
+													<button className='btn btn-2 price'>
 														INR ₹ {groupMonth.toLocaleString()}
 													</button>
 												</p>

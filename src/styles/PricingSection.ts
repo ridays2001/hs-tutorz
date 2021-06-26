@@ -81,11 +81,7 @@ const PricingSection = styled.section`
 		color: ${colors.primary};
 		border: 1px solid ${colors.highlightgrey};
 	}
-	.btn-3 {
-		color: ${colors.primary};
-	}
-	.btn-2:hover,
-	.btn-3:hover {
+	.btn-2:hover {
 		background-color: ${colors.highlightLow};
 		color: ${colors.dark};
 	}
