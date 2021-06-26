@@ -1,13 +1,13 @@
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import { breakpoints, colors, text } from '../theme';
+import { breakpoints, colors } from '../theme';
 
 interface Props {
 	active: 1 | 0;
 }
 
 const NavLink = styled(Link)<Props>`
-	color: ${({ active }) => (active ? text.high : colors.primary)};
+	color: ${({ active }) => (active ? colors.white1 : colors.primary)};
 	background-color: ${({ active }) => (active ? colors.highlight : 'none')};
 
 	text-decoration: none;
@@ -18,7 +18,7 @@ const NavLink = styled(Link)<Props>`
 
 	:hover,
 	:focus {
-		color: ${text.high};
+		color: ${colors.white1};
 		background-color: ${colors.highlight};
 		text-decoration: none;
 	}
