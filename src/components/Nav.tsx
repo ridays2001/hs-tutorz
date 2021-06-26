@@ -3,7 +3,6 @@ import NavLink from '../styles/NavLink';
 import AppHeader from '../styles/AppHeader';
 import { Link } from 'gatsby';
 
-// Think of a name for 'become-a-tutor'. Preferably a one or two words.
 export type Pages = 'home' | 'about' | 'blog' | 'contact' | 'pricing' | 'careers';
 
 interface Props {
