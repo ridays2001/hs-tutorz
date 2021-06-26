@@ -45,7 +45,7 @@ module.exports = {
 			resolve: 'gatsby-plugin-web-font-loader',
 			options: {
 				google: {
-					families: ['Playfair Display', 'Playfair Display SC']
+					families: ['Playfair Display', 'Playfair Display SC', 'Roboto Slab']
 				}
 			}
 		}
