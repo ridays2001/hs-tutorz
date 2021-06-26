@@ -369,6 +369,24 @@ ${devices.xxl} {
 .offset-11 {
 	margin-left: 91.6666666667%;
 }
+${devices.sm} {
+	.row-cols-sm-1 > * {
+		flex: 0 0 auto;
+		width: 100%;
+	}
+	.row-cols-sm-2 > * {
+		flex: 0 0 auto;
+		width: 50%;
+	}
+	.row-cols-sm-3 > * {
+		flex: 0 0 auto;
+		width: 33.3333333333%;
+	}
+	.row-cols-sm-4 > * {
+		flex: 0 0 auto;
+		width: 25%;
+	}
+}
 ${devices.md} {
 	.col-md {
 		flex: 1 0 0%;
