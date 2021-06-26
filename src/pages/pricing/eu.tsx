@@ -1,9 +1,17 @@
-import React from 'react';
+import { navigate } from 'gatsby';
+import React, { useEffect } from 'react';
 import Layout from '../../components/Layout';
 import SEO from '../../components/SEO';
 import PricingSection from '../../styles/PricingSection';
+import getRegion from '../../util/getRegion';
 
-const PricingPage = () => {
+const EuPricingPage = () => {
+	useEffect(() => {
+		(async () => {
+			const region = await getRegion();
+			if (region !== 'eu') return navigate(`/pricing/${region}/`);
+		})();
+	}, []);
 	const block = [
 		'3 x 1 hour sessions per week (12 sessions/mo)',
 		'One Subject',
@@ -36,9 +44,9 @@ const PricingPage = () => {
 	const custom = [
 		'Want tutoring for more than one subject?',
 		'Want a different number of sessions per week?',
-		'Any other customization or negotiation?',
 		'Have a group of more than 5 students?',
-		'Want only revision or exam preparation?'
+		'Want only revision or exam preparation?',
+		'Any other customization or negotiation?'
 	];
 
 	interface PlansPerLevel {
@@ -116,14 +124,20 @@ const PricingPage = () => {
 											<div className='card-title'>1-on-1 Sessions</div>
 											<div className='card-subtitle mb-5'>Block Booking</div>
 											<div className='card-text text-center'>
-												<button className='btn btn-2 price'>
+												<button
+													className='btn btn-2 price'
+													onClick={() => navigate('/plans/plan1/')}
+												>
 													EUR € <span className='strike'>{blockStrike.toLocaleString()}</span>
 													{blockAnnum.toLocaleString()} annually
 												</button>
 												<p className='mt-4'>
 													Or pay monthly
 													<br />
-													<button className='btn btn-2 price'>
+													<button
+														className='btn btn-2 price'
+														onClick={() => navigate('/plans/plan1/')}
+													>
 														EUR € {blockMonth.toLocaleString()}
 													</button>
 												</p>
@@ -147,14 +161,20 @@ const PricingPage = () => {
 											<div className='card-subtitle mb-4'>2 - 5 students</div>
 											<div className='card-text text-center'>
 												<span>Price Per Student:</span>
-												<button className='btn btn-primary price'>
+												<button
+													className='btn btn-primary price'
+													onClick={() => navigate('/plans/plan2/')}
+												>
 													EUR € <span className='strike'>{groupStrike.toLocaleString()}</span>
 													{groupAnnum.toLocaleString()} annually
 												</button>
 												<p className='mt-4'>
 													Or pay monthly
 													<br />
-													<button className='btn btn-2 price'>
+													<button
+														className='btn btn-2 price'
+														onClick={() => navigate('/plans/plan2/')}
+													>
 														EUR € {groupMonth.toLocaleString()}
 													</button>
 												</p>
@@ -177,7 +197,10 @@ const PricingPage = () => {
 											<div className='card-title'>Individual Lessons</div>
 											<div className='card-subtitle mb-5'>Single Student</div>
 											<div className='card-text text-center'>
-												<button className='btn btn-2 price'>
+												<button
+													className='btn btn-2 price'
+													onClick={() => navigate('/plans/plan3/')}
+												>
 													EUR € {single.toLocaleString()} per hour
 												</button>
 											</div>
@@ -198,7 +221,12 @@ const PricingPage = () => {
 										<div className='card-body'>
 											<div className='card-title'>Custom</div>
 											<div className='card-text text-center'>
-												<button className='btn btn-2 price'>Make your own plan</button>
+												<button
+													className='btn btn-2 price'
+													onClick={() => navigate('/plans/plan4/')}
+												>
+													Make your own plan
+												</button>
 											</div>
 											<ul className='list-group list-group-flush text-start'>
 												{custom.map(b => (
@@ -219,4 +247,4 @@ const PricingPage = () => {
 	);
 };
 
-export default PricingPage;
+export default EuPricingPage;
