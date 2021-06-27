@@ -1,13 +1,22 @@
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
+import styled from 'styled-components';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import Testimonials from '../components/Testimonials';
 import TutOpts from '../components/TutOpts';
 import Working from '../components/Working';
 import Intro from '../styles/Intro';
-import { text } from '../theme';
+import { devices, text } from '../theme';
+
+const LogoBox = styled.main`
+	display: grid;
+	transform: translateY(100px);
+	${devices.xl} {
+		transform: translateY(120px);
+	}
+`;
 
 const IndexPage = () => (
 	<Layout page='home'>
@@ -40,9 +49,19 @@ const IndexPage = () => (
 				}}
 				className='row mx-auto'
 			>
-				<div className='col-md-6 mx-auto d-flex justify-content-evenly'>
-					<h1>Logo</h1>
-				</div>
+				<LogoBox className='col-md-9 col-xl-6 mx-auto'>
+					<StaticImage
+						style={{
+							gridArea: '1/1'
+						}}
+						layout='fullWidth'
+						aspectRatio={5 / 2}
+						alt='Logo'
+						src='../images/logo.png'
+						formats={['auto', 'webp']}
+						placeholder='dominantColor'
+					/>
+				</LogoBox>
 				<div className='row mx-auto'>
 					<div className='row mx-auto justify-content-center my-3'>
 						<div className='text-center'>
