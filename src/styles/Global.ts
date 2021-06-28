@@ -41,6 +41,9 @@ const Global = createGlobalStyle`
 		outline: none;
 		box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.3);
 	}
+	.btn-secondary:hover svg {
+		fill: rgba(0, 0, 0, 0.75);
+	}
 `;
 
 export default Global;
