@@ -10,7 +10,20 @@ const TutOpts = () => (
 			<TutOption className='col-11 col-md-5 col-xl-3'>
 				<h4>Subjects Offered</h4>
 				<ul className='text-start'>
-					{['Economics', 'Business Studies', 'English'].map(s => (
+					{[
+						'Economics',
+						'Business Studies',
+						'Accountancy',
+						'English',
+						'Psychology',
+						'Sociology',
+						'Geography',
+						'History',
+						'Political Science (Civics)',
+						'Public Administration',
+						'Home Science',
+						'Fine Arts'
+					].map(s => (
 						<li key={s}>{s}</li>
 					))}
 				</ul>
