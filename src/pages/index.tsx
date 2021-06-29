@@ -87,8 +87,8 @@ const IndexPage = () => (
 			<p>
 				HS Tutorialz began with a simple idea that the lecture hall/ classroom setting was insufficient for
 				unlocking the learning potential of each student. We are resourceful, patient, and well equipped to
-				cater to a variety of different learning styles. With specializing in Economics, Business Studies and
-				English, we tutor students at High School and Undergraduate level.
+				cater to a variety of different learning styles. With specializing in Arts and Commerce fields, we tutor
+				students at High School and Undergraduate level.
 			</p>
 			<p>
 				At HS Tutorialz, learning is tailored to your needs. Our primary small group courses give students the
