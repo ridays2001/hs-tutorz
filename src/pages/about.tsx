@@ -4,6 +4,7 @@ import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import { CompanySection, OfferingBox, FounderSection } from '../styles/AboutSection';
 import { StaticImage } from 'gatsby-plugin-image';
+import { Link } from 'gatsby';
 
 interface Offering {
 	icon: JSX.Element;
@@ -103,6 +104,11 @@ const AboutPage = () => (
 						</p>
 					</li>
 				</ul>
+				<section className='text-center mt-5'>
+					<Link className='btn btn-primary btn-lg' to='/plans/demo'>
+						Book A Demo
+					</Link>
+				</section>
 			</section>
 
 			<h2 className='text-center my-3'>What You Get:</h2>
@@ -122,9 +128,14 @@ const AboutPage = () => (
 				</OfferingBox>
 			))}
 		</CompanySection>
-		<h2 className='text-center my-3'>The Founder</h2>
 
-		{/* 2 section layout. Image + text. */}
+		<section className='text-center my-5'>
+			<Link className='btn btn-primary btn-lg' to='/plans/demo'>
+				Book A Demo
+			</Link>
+		</section>
+
+		<h2 className='text-center my-3'>The Founder</h2>
 		<FounderSection className='row col-md-9 mx-md-auto text-start'>
 			<aside className='col-md-9 mx-md-auto mx-xl-0 col-xl-6 text-center' id='pfp'>
 				<StaticImage

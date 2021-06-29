@@ -101,9 +101,20 @@ const IndexPage = () => (
 				grades.
 			</p>
 			<p>So don’t delay, Sign up to get better grades today!</p>
+			<section className='text-center mt-5'>
+				<Link className='btn btn-primary btn-lg' to='/plans/demo'>
+					Book A Demo
+				</Link>
+			</section>
 		</Intro>
 		<Working style={{ marginTop: '2em' }} />
 		<TutOpts />
+
+		<section className='text-center my-5'>
+			<Link className='btn btn-primary btn-lg' to='/plans/demo'>
+				Book A Demo
+			</Link>
+		</section>
 
 		{/* Testimonials */}
 		<Testimonials />
