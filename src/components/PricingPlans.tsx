@@ -151,6 +151,21 @@ const PricingPlans = ({ block, currency, custom, group, lesson, plans }: Props) 
 					</section>
 				)
 			)}
+
+			<section className='col-md-10 col-xl-9 mx-auto my-5'>
+				<h4>Cancellation Policy:</h4>
+				<p>
+					12 hours cancellation policy. If the lessons are cancelled less than 12 hours prior to scheduled
+					time, the full cost of the lesson wil be payable.
+				</p>
+				<p>
+					Rescheduling of lectures can be done upto 3 hours prior to the scheduled time. No rescheduling
+					requests will be entertained after that.
+				</p>
+
+				<h4>Referral Offer:</h4>
+				<p>5% cashback on your fees for every student who enrolls due to your referral.</p>
+			</section>
 		</PricingSection>
 	</Layout>
 );
