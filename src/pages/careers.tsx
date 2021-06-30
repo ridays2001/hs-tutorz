@@ -84,6 +84,12 @@ const CareersPage = () => {
 					<br />
 				</section>
 
+				<div className='text-center my-5'>
+					<a href={process.env.GATSBY_CAREERS_FORM} className='btn btn-primary'>
+						Apply Now!
+					</a>
+				</div>
+
 				<h3 className='text-center my-5'>Perks</h3>
 				<div className='row justify-content-evenly' id='grid'>
 					{perks.map(p => (
@@ -127,6 +133,12 @@ const CareersPage = () => {
 				</section>
 
 				<SelectionSteps />
+
+				<div className='text-center my-5'>
+					<a href={process.env.GATSBY_CAREERS_FORM} className='btn btn-primary'>
+						Apply Now!
+					</a>
+				</div>
 			</CareersSection>
 		</Layout>
 	);
