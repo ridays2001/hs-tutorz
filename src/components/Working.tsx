@@ -25,7 +25,7 @@ const Step = ({ border, color, icon, link, linkText, para, title, index }: StepP
 				{link && <Link to={link}>{linkText} ↗</Link>}
 			</div>
 		</WorkStep>
-		{index !== 3 ? <ArrowDownIcon className='d-none d-md-inline' width={48} height={48} /> : ''}
+		{index !== 3 ? <ArrowDownIcon className='d-none d-md-inline my-3' width={48} height={48} /> : ''}
 	</Fragment>
 );
 
