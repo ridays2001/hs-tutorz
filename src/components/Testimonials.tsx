@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import { Helmet } from 'react-helmet';
 import Slider from 'react-slick';
 import styled from 'styled-components';
+import { devices, shadows } from '../theme';
 import testimonials from '../util/testimonials';
 
 const Container = styled.div`
@@ -10,6 +11,28 @@ const Container = styled.div`
 
 	&:active {
 		cursor: grabbing;
+	}
+
+	${devices.md} {
+		.testimonial {
+			width: 85%;
+			margin: 0 auto;
+			margin-top: 1em;
+			margin-bottom: 2em;
+			box-shadow: ${shadows.layer1};
+			border-radius: 21px;
+			padding: 2.5em;
+		}
+	}
+	.name {
+		text-align: end;
+		font-weight: 600;
+		font-style: italic;
+		font-size: 20px;
+	}
+	.review {
+		font-weight: 400;
+		font-style: italic;
 	}
 `;
 
@@ -28,6 +51,7 @@ const Testimonials = () => (
 			/>
 		</Helmet>
 		<Container className='col-11 col-md-9 col-lg-8 col-xl-6 mx-auto'>
+			<h3 className='text-center mt-5 mb-2'>What our students say:</h3>
 			<Slider
 				speed={500}
 				slidesToScroll={1}
@@ -40,9 +64,10 @@ const Testimonials = () => (
 			>
 				{testimonials.map(({ name, review }, i) => (
 					<div key={i.toString()}>
-						By {name}
-						<br />
-						{review}
+						<div className='testimonial'>
+							<p className='review'>{review}</p>
+							<p className='name'>By {name}</p>
+						</div>
 					</div>
 				))}
 			</Slider>
