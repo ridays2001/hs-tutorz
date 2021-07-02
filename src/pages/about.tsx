@@ -5,6 +5,7 @@ import SEO from '../components/SEO';
 import { CompanySection, OfferingBox, FounderSection } from '../styles/AboutSection';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
+import Testimonials from '../components/Testimonials';
 
 interface Offering {
 	icon: JSX.Element;
@@ -191,6 +192,8 @@ const AboutPage = () => (
 				</p>
 			</aside>
 		</FounderSection>
+
+		<Testimonials />
 	</Layout>
 );
 
