@@ -8,6 +8,7 @@ export const colors = {
 	blue: '#4B68BF',
 	c6: '#BF6068',
 	highlight: 'rgba(121, 53, 43, 0.8)',
+	highlightMid: 'rgba(121, 53, 43, 0.25)',
 	highlightLow: 'rgba(121, 53, 43, 0.15)',
 	highlightgrey: 'rgba(108, 117, 125, 0.2)',
 	white0: '#ffffff',
