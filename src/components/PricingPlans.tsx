@@ -15,7 +15,7 @@ interface Props {
 }
 const PricingPlans = ({ block, currency, custom, group, lesson, plans }: Props) => {
 	const [selected, setSelected] = useState(plans);
-	const [filter, setFilter] = useState<undefined | string>(undefined);
+	const [filter, setFilter] = useState<string>('all');
 
 	useEffect(() => {
 		if (filter !== 'all') setSelected(plans.filter(p => p.id === filter));
