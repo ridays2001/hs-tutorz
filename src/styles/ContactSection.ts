@@ -22,6 +22,25 @@ const ContactSection = styled.section`
 		background-color: ${colors.highlightMid};
 	}
 
+	.q,
+	.a {
+		display: block;
+	}
+	.q {
+		margin-top: 1.75em;
+		margin-bottom: 0.5em;
+	}
+	.q::before {
+		content: 'Q. ';
+		font-weight: 600;
+		font-style: italic;
+	}
+	.a::before {
+		content: 'Ans. ';
+		font-weight: 600;
+		font-style: italic;
+	}
+
 	${devices.md} {
 		#num {
 			margin-top: 0;
