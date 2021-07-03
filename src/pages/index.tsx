@@ -85,13 +85,13 @@ const IndexPage = () => (
 		<h1 className='text-center mt-5'>Who We Are:</h1>
 		<Intro className='col-md-9 col-lg-8 col-xl-6 mx-auto'>
 			<p>
-				HS Tutorialz began with a simple idea that the lecture hall/ classroom setting was insufficient for
+				HS Tutorz began with a simple idea that the lecture hall/ classroom setting was insufficient for
 				unlocking the learning potential of each student. We are resourceful, patient, and well equipped to
 				cater to a variety of different learning styles. With specializing in Arts and Commerce fields, we tutor
 				students at High School and Undergraduate level.
 			</p>
 			<p>
-				At HS Tutorialz, learning is tailored to your needs. Our primary small group courses give students the
+				At HS Tutorz, learning is tailored to your needs. Our primary small group courses give students the
 				opportunity to share, speak up and build communication skills alongside their academic knowledge.
 				Private one-on-one programs offer a targeted approach to individual learning needs.
 			</p>

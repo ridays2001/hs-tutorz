@@ -1,3 +1,7 @@
-# HS Tutorialz
+# HS Tutorz
 
-A tutorial business website.
+This is a tutorials business website.
+
+Built with Gatsby and Typescript.
+
+Live version - https://hs-tutorz.netlify.app/

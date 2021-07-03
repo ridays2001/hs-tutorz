@@ -12,7 +12,7 @@ const DemoPlanPage = () => {
 
 	return (
 		<Fragment>
-			<SEO title='Book Demo Lecture' description='Book a demo lecture at HS Tutorialz.' />
+			<SEO title='Book Demo Lecture' description='Book a demo lecture at HS Tutorz.' />
 			Please Wait...
 		</Fragment>
 	);

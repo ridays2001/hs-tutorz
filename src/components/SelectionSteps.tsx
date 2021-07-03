@@ -90,7 +90,7 @@ const steps: Array<StepType> = [
 		para: (
 			<p>
 				Once shortlisted, you'll have to pay a small one-time fee for training and a PenTablet. You can earn
-				back this investment within 1 month of tutoring on HS Tutorialz.
+				back this investment within 1 month of tutoring on HS Tutorz.
 			</p>
 		)
 	},

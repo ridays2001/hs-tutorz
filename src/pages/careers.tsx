@@ -70,13 +70,13 @@ const CareersPage = () => {
 	];
 	return (
 		<Layout page='careers'>
-			<SEO title='Teach With Us' description='Teacher registration with HS Tutorialz.' />
+			<SEO title='Teach With Us' description='Teacher registration with HS Tutorz.' />
 			<CareersSection className='col-md-9 col-lg-8 col-xl-6 mx-auto mb-5'>
 				<h1 className='text-center my-3'>Teach With Us</h1>
 
 				<section className='row mx-md-auto' id='first-para'>
-					At HS Tutorialz, we aim to create a sustainable community where students and tutors can work
-					together and solve problems. We want to gather like-minded individuals who enjoy both teaching and
+					At HS Tutorz, we aim to create a sustainable community where students and tutors can work together
+					and solve problems. We want to gather like-minded individuals who enjoy both teaching and
 					‘learning-by-teaching’. We invite problem solvers to join us in our effort to build a team that is
 					committed to helping students succeed in their studies. We hand pick individuals who possess the
 					academic knowledge needed to teach students and the personal skills needed to connect with them.

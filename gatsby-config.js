@@ -4,10 +4,10 @@ const desc = 'Online Economics tutorials for high school and college level.';
 
 module.exports = {
 	siteMetadata: {
-		title: 'HS Tutorialz',
+		title: 'HS Tutorz',
 		description: desc,
 		// Change this URL later!
-		siteUrl: 'https://hs-tutorialz.netlify.app'
+		siteUrl: 'https://hs-tutorz.netlify.app'
 	},
 	plugins: [
 		'gatsby-plugin-styled-components',
@@ -28,7 +28,7 @@ module.exports = {
 		{
 			resolve: 'gatsby-plugin-manifest',
 			options: {
-				name: 'HS Tutorialz',
+				name: 'HS Tutorz',
 				short_name: 'HST',
 				description: desc,
 				start_url: '/',

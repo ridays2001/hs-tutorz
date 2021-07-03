@@ -8,12 +8,12 @@ interface Props {
 
 const SEO = ({ title, description }: Props) => (
 	<Helmet>
-		<title>{title} | HS Tutorialz</title>
+		<title>{title} | HS Tutorz</title>
 		<meta name='description' content={description || 'A Tutorials business website.'} />
-		<meta name='subject' content='HS Tutorialz' />
+		<meta name='subject' content='HS Tutorz' />
 		<meta name='rating' content='General' />
 
-		<meta property='og:title' content='HS Tutorialz' />
+		<meta property='og:title' content='HS Tutorz' />
 		<meta property='og:description' content='A Tutorials business website.' />
 		<meta property='og:locale' content='en_IN' />
 		<meta property='article:author' content='Riday Shah' />

@@ -54,7 +54,7 @@ const AboutPage = () => (
 			<h1 className='my-3'>About Us</h1>
 
 			<section className='row text-start mx-md-auto' id='about'>
-				HS Tutorialz began with a simple idea that the lecture hall/ classroom setting was insufficient for
+				HS Tutorz began with a simple idea that the lecture hall/ classroom setting was insufficient for
 				unlocking the learning potential of each student. But to an industry that relied on conformity, the idea
 				of building a peer-to-peer tutoring model that acknowledged the unique learning style of the individual
 				was revolutionary.
@@ -89,7 +89,7 @@ const AboutPage = () => (
 					<li>
 						<h6 className='sub'>Individual Needs</h6>
 						<p>
-							At HS Tutorialz, learning is tailored to your needs. Our primary small group courses give
+							At HS Tutorz, learning is tailored to your needs. Our primary small group courses give
 							students the opportunity to share, speak up and build communication skills alongside their
 							academic knowledge. Private one-to-one programs offer a targeted approach to individual
 							learning needs.

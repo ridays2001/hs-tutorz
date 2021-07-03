@@ -76,7 +76,7 @@ const Nav = ({ active }: Props) => {
 					style={{ textDecoration: 'none', color: '#000000', backgroundColor: 'inherit !import' }}
 					className='col-md-4 col-xxl-3 text-start ps-5'
 				>
-					<h2>HS Tutorialz</h2>
+					<h2>HS Tutorz</h2>
 				</Link>
 				<nav className='col-md-7 col-lg-6 col-xl-5 col-xxl-4 d-flex justify-content-evenly align-items-center'>
 					{NavLinks}
@@ -88,7 +88,7 @@ const Nav = ({ active }: Props) => {
 					style={{ textDecoration: 'none', color: 'inherit', backgroundColor: 'inherit !import' }}
 					className='col-8 d-flex align-items-center ps-4'
 				>
-					<h2 className='d-flex align-items-center'>HS Tutorialz</h2>
+					<h2 className='d-flex align-items-center'>HS Tutorz</h2>
 				</Link>
 				<button
 					className={`d-flex p-0 offset-2 col-2 h-100 ${open ? 'open' : ''}`}
@@ -118,7 +118,7 @@ const Nav = ({ active }: Props) => {
 								className='d-flex col-8 align-items-center nope'
 							>
 								<h2 className='d-flex align-items-center' style={{ top: '10px', left: '0' }}>
-									HS Tutorialz
+									HS Tutorz
 								</h2>
 							</Link>
 							<button

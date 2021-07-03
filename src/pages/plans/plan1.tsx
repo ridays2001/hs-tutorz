@@ -11,7 +11,7 @@ const Plan1Page = () => {
 	}, []);
 	return (
 		<Fragment>
-			<SEO title='Book 1-on-1 Classes' description='Book one-on-one classes at HS Tutorialz.' />
+			<SEO title='Book 1-on-1 Classes' description='Book one-on-one classes at HS Tutorz.' />
 			Please Wait...
 		</Fragment>
 	);

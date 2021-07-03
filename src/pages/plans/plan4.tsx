@@ -11,7 +11,7 @@ const Plan4Page = () => {
 	}, []);
 	return (
 		<Fragment>
-			<SEO title='Make Your Plan' description='Make your own plan for learning sessions at HS Tutorialz.' />
+			<SEO title='Make Your Plan' description='Make your own plan for learning sessions at HS Tutorz.' />
 			Please Wait...
 		</Fragment>
 	);
