@@ -11,6 +11,7 @@ interface Post {
 			desc: string;
 			path: string;
 			title: string;
+			tags: Array<string>;
 		};
 	};
 }
@@ -55,6 +56,7 @@ export const pageQuery = graphql`
 						date(formatString: "MMMM DD, YYYY")
 						path
 						desc
+						tags
 					}
 				}
 			}

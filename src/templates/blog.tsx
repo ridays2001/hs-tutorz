@@ -12,6 +12,7 @@ interface Props {
 				desc: string;
 				path: string;
 				title: string;
+				tags: Array<string>;
 			};
 		};
 	};
@@ -41,6 +42,7 @@ export const pageQuery = graphql`
 				path
 				title
 				desc
+				tags
 			}
 		}
 	}
