@@ -1330,6 +1330,11 @@ ${devices.sm} {
 .mb-auto {
 	margin-bottom: auto !important;
 }
+${devices.md} {
+	.mb-md-5 {
+		margin-bottom: 3rem !important;
+	}
+}
 .ms-0 {
 	margin-left: 0 !important;
 }
