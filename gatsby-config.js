@@ -16,7 +16,14 @@ module.exports = {
 		'gatsby-plugin-sitemap',
 		'gatsby-plugin-sharp',
 		'gatsby-transformer-sharp',
-		'gatsby-plugin-typescript',
+		{
+			resolve: 'gatsby-plugin-typescript',
+			options: {
+				isTSX: true,
+				jsxPragma: 'jsx',
+				allExtensions: true
+			}
+		},
 		{
 			resolve: 'gatsby-source-filesystem',
 			options: {
