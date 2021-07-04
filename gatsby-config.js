@@ -1,5 +1,7 @@
 require('dotenv').config();
 
+process.noDeprecation = true; // https://github.com/webpack/webpack/issues/6568
+
 const desc = 'Online Economics tutorials for high school and college level.';
 
 module.exports = {
