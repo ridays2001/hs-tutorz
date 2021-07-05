@@ -40,7 +40,7 @@ As much as we would hate it, It is a true fact that children learn by watching y
 
 Teens crave the praise and acceptance of adults. So if they see that you don&#39;t think they&#39;re worthy, they&#39;ll find a way to prove otherwise.
 
-The time that your daughter almost set the kitchen on fire? Yes, she were trying to make something special for you and prove to you that she could cook like the neighbor&#39;s daughter that you praised the day before.
+The time that your daughter almost set the kitchen on fire? Yes, she was trying to make something special for you and prove to you that she could cook like the neighbor&#39;s daughter that you praised the day before.
 
 ##### 4) We want to fix everything.
 
