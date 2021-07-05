@@ -72,6 +72,11 @@ const Testimonials = () => (
 				))}
 			</Slider>
 		</Container>
+		<div className='mb-5 text-center' style={{ marginTop: '-20px' }}>
+			<a href={process.env.GATSBY_TESTIMONIALS} className='btn btn-primary'>
+				Give Feedback
+			</a>
+		</div>
 	</Fragment>
 );
 
