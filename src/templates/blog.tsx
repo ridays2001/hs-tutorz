@@ -1,5 +1,6 @@
 import { graphql } from 'gatsby';
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import BlogArticle, { Tag } from '../styles/BlogArticle';
@@ -11,6 +12,7 @@ interface Props {
 			frontmatter: {
 				date: string;
 				desc: string;
+				img: string;
 				path: string;
 				title: string;
 				tags: Array<'parents' | 'students' | 'teachers' | 'world'>;
@@ -27,7 +29,18 @@ const BlogPost = ({ data }: Props) => {
 	return (
 		<Layout page='blog'>
 			<SEO title={post.title} description={post.desc} />
+			<Helmet>
+				<meta property='og:url' content={`https://www.hstutorz.com${post.path}`} />
+				<meta property='og:type' content='Blog' />
+				<meta property='og:image' content={post.img} />
+				<meta property='og:image:alt' content='Blog Article Header.' />
+				<meta property='og:site_name' content='HS Tutorz' />
+				<meta property='og:locale' content='en_US' />
+				<meta property='article:author' content='HS Tutorz' />
+			</Helmet>
+
 			<main className='text-center mt-3 mb-md-5'>
+				<img src={post.img} alt='Header Image' className='mb-3 img-fluid' style={{ borderRadius: '21px' }} />
 				<h1 className='mb-3'>{post.title}</h1>
 				<div className='d-flex justify-content-evenly'>
 					{post.tags.map(tag => (
@@ -61,6 +74,7 @@ export const pageQuery = graphql`
 				title
 				desc
 				tags
+				img
 			}
 		}
 	}

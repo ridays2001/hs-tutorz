@@ -22,6 +22,9 @@ const BlogArticle = styled.article`
 
 	img {
 		max-width: 100%;
+		border-radius: 14px;
+		margin-top: 12px;
+		margin-bottom: 12px;
 	}
 
 	${devices.md} {
