@@ -3,6 +3,7 @@ path: /blog/talk-to-teens
 date: 2021-07-04 19:12:00 +05:30
 title: How To Talk So Teens Will Listen (8 Ways)
 desc: We list down 8 different ways to talk to teens so that they listen.
+img: https://i.imgur.com/cUtdrHd.jpg
 tags: [parents]
 ---
 
@@ -19,6 +20,8 @@ Do you have teenage children? If yes, then you can very well relate to most of t
 Follow these pointers, and with a little bit of time and patience, you will definitely see the change in your relationship with your teens.
 
 ### Why Don&#39;t Teenagers Listen?
+
+![Image](https://i.imgur.com/4b3Ox3c.jpg)
 
 First of all, to understand the solution, you need to know the actual problem. In other words, you need to understand why teens _Do Not_ listen to you.
 
@@ -61,6 +64,8 @@ So the next time your child is in the middle of a video game, almost about to wi
 Of course we can&#39;t do that when the child is halfway through a five hundred piece puzzle. So in this case, give them a time frame. Say something like &quot;You need to come down to eat in 10 minutes.&quot;
 
 ### How to get them to listen?
+
+![Image](https://i.imgur.com/sh1utDj.jpg)
 
 Now that we have that out of the way, we know why the teens have trouble listening to us. Let&#39;s look at a few ways that you can change that.
 
