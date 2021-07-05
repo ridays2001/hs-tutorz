@@ -8,8 +8,7 @@ module.exports = {
 	siteMetadata: {
 		title: 'HS Tutorz',
 		description: desc,
-		// Change this URL later!
-		siteUrl: 'https://hs-tutorz.netlify.app'
+		siteUrl: 'https://www.hstutorz.com/'
 	},
 	plugins: [
 		'gatsby-plugin-styled-components',
