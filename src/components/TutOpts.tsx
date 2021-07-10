@@ -13,7 +13,6 @@ const TutOpts = () => (
 					{[
 						'Economics',
 						'Business Studies',
-						'Accountancy',
 						'English',
 						'Psychology',
 						'Sociology',
@@ -21,8 +20,7 @@ const TutOpts = () => (
 						'History',
 						'Political Science (Civics)',
 						'Public Administration',
-						'Home Science',
-						'Fine Arts'
+						'Home Science'
 					].map(s => (
 						<li key={s}>{s}</li>
 					))}
