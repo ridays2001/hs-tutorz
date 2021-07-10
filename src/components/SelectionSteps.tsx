@@ -128,10 +128,10 @@ const steps: Array<StepType> = [
 		),
 		para: (
 			<p>
-				Upon clearing the evaluation, we will place you in a category (Trainee, Bronze, Silver, Gold) based on
-				your academic credentials, performance and past experience. A trainee tutor starts with a remuneration
-				of ___ per month, while a Gold tutor can easily earn upto __ a month working on flexible timings from
-				the comfort of your home. Your earnings also increase with the number of classes you take.
+				Upon clearing the evaluation, we will place you in a category (Bronze, Silver, Gold) based on your
+				academic credentials, performance and past experience. You can then start earning by taking classes on
+				flexible timings from the comfort of your home. Your compensation will increase as your category
+				upgrades and with the number of classes you take.
 			</p>
 		)
 	}
