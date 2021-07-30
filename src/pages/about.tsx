@@ -136,11 +136,11 @@ const AboutPage = () => (
 			</Link>
 		</section>
 
-		<h2 className='text-center my-3'>The Founder</h2>
+		<h2 className='text-center my-3'>Founder's Corner</h2>
 		<FounderSection className='row col-md-9 mx-md-auto text-start'>
 			<aside className='col-md-9 mx-md-auto mx-xl-0 col-xl-6 text-center' id='pfp'>
 				<StaticImage
-					src='../images/pfp.png'
+					src='../images/pfp.jpg'
 					style={{
 						filter: 'grayscale(0.4)'
 					}}
@@ -153,43 +153,38 @@ const AboutPage = () => (
 			</aside>
 			<aside className='col-xl-6' id='about'>
 				<p>
-					Even before I was a professional teacher, I was always teaching things to children and my peers.
+					"Even before I was a professional teacher, I was always teaching things to children and my peers.
 					That led to many people suggesting me to take on teaching as a profession but I always had some or
 					the other profession in mind that I could go for instead.
 				</p>
-
 				<p>
 					When I graduated, I had a number of options to choose from. Each more attractive than the one
 					before. It wasn't until I qualified my MBA entrance with 98.9 percentile, that I had my calling. I
 					realized I am an academician. I didn't want to sit in an office making money! I wanted to get out
 					there and shape the young minds of tomorrow.
 				</p>
-
 				<p>So I dropped everything in favor of teaching.</p>
-
 				<p>
 					But, I soon realized that the lecture hall/ classroom setting was insufficient for unlocking the
 					learning potential of each student. Besides, I couldn’t reach as many students as I would have
 					liked, while in the confines of a classroom. So I decided to get out there and try to reach out to
 					as many students as possible.
 				</p>
-
 				<p>
 					Today, I have been teaching professionally for quite a few years and I am now dedicated to further
 					my tutoring journey by continuing to share methods of teaching that work effectively for both tutors
 					and students.
 				</p>
-
 				<p>
 					I believe that teaching is not just about making students study, but actually helping them learn
 					something. I have always ensured that my students understand the concepts clearly. In addition to
 					teaching, I usually counsel my students on professional opportunities available to them.
 				</p>
-
 				<p>
 					I always look forward to meeting students who are as passionate about learning as I am about
-					teaching.
+					teaching."
 				</p>
+				&mdash; Himaani Shah
 			</aside>
 		</FounderSection>
 
