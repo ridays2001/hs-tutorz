@@ -1,14 +1,5 @@
-export const blockInEu = [
+export const block = [
 	'3 x 1 hour sessions per week (12 sessions/mo)',
-	'One Subject',
-	'Personalized attention',
-	'Tailor made lectures',
-	'1 on 1 doubt solving',
-	'Regular tests',
-	'Personalized feedback'
-];
-export const blockUs = [
-	'2 x 1 hour sessions per week (8 sessions/mo)',
 	'One Subject',
 	'Personalized attention',
 	'Tailor made lectures',
@@ -59,35 +50,35 @@ export const plansIn: Array<PlansPerLevel> = [
 	{
 		id: '9-10',
 		level: 'IX and X Grades',
-		blockStrike: 102000,
-		blockAnnum: 87000,
-		blockMonth: 8500,
-		groupStrike: 84000,
-		groupAnnum: 73000,
-		groupMonth: 7000,
-		single: 800
+		blockStrike: 89988,
+		blockAnnum: 79999,
+		blockMonth: 7499,
+		groupStrike: 71988,
+		groupAnnum: 63999,
+		groupMonth: 5999,
+		single: 700
 	},
 	{
 		id: '11-12',
 		level: 'XI and XII Grades',
-		blockStrike: 114000,
-		blockAnnum: 100000,
-		blockMonth: 9500,
-		groupStrike: 96000,
-		groupAnnum: 83000,
-		groupMonth: 8000,
-		single: 900
+		blockStrike: 101988,
+		blockAnnum: 89999,
+		blockMonth: 8499,
+		groupStrike: 83988,
+		groupAnnum: 74999,
+		groupMonth: 6999,
+		single: 800
 	},
 	{
 		id: 'UG',
 		level: 'Undergraduate',
-		blockStrike: 120000,
-		blockAnnum: 103000,
-		blockMonth: 10000,
-		groupStrike: 102000,
-		groupAnnum: 87000,
-		groupMonth: 8500,
-		single: 1000
+		blockStrike: 107988,
+		blockAnnum: 94999,
+		blockMonth: 8999,
+		groupStrike: 89988,
+		groupAnnum: 76999,
+		groupMonth: 7499,
+		single: 900
 	}
 ];
 export const plansEu: Array<PlansPerLevel> = [
@@ -135,7 +126,7 @@ export const plansUs: Array<PlansPerLevel> = [
 		groupStrike: 1500,
 		groupAnnum: 1300,
 		groupMonth: 125,
-		single: 25
+		single: 20
 	},
 	{
 		id: '11-12',
@@ -146,7 +137,7 @@ export const plansUs: Array<PlansPerLevel> = [
 		groupStrike: 2400,
 		groupAnnum: 2100,
 		groupMonth: 200,
-		single: 35
+		single: 30
 	},
 	{
 		id: 'UG',
@@ -157,6 +148,6 @@ export const plansUs: Array<PlansPerLevel> = [
 		groupStrike: 3000,
 		groupAnnum: 2600,
 		groupMonth: 250,
-		single: 45
+		single: 40
 	}
 ];
