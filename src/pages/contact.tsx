@@ -71,7 +71,7 @@ const ContactPage = () => {
 						or click on the button below:
 						<br />
 						<br />
-						<a href={`mailto:${process.env.GATSBY_EMAIL}`} className='btn btn-primary'>
+						<a href={`mailto:${process.env.GATSBY_EMAIL}`} target='_blank' className='btn btn-primary'>
 							<EmailIcon /> &ensp; Email
 						</a>
 					</div>
@@ -83,6 +83,7 @@ const ContactPage = () => {
 						<br />
 						<a
 							href={`https://wa.me/91${process.env.GATSBY_PHONE?.replace(/\s/g, '')}`}
+							target='_blank'
 							className='btn btn-primary'
 						>
 							<WhatsAppIcon /> &ensp; WhatsApp
@@ -92,7 +93,7 @@ const ContactPage = () => {
 						Or you can fill the following contact form and we will get back to you within 24 hours.
 						<br />
 						<br />
-						<a href={process.env.GATSBY_CONTACT_FORM} className='btn btn-primary'>
+						<a href={process.env.GATSBY_CONTACT_FORM} target='_blank' className='btn btn-primary'>
 							<SheetIcon /> &ensp; Contact Form
 						</a>
 					</div>

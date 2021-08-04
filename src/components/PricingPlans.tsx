@@ -3,7 +3,7 @@ import type { PlansPerLevel } from '../util/pricingPlans';
 import Layout from './Layout';
 import SEO from './SEO';
 import PricingSection from '../styles/PricingSection';
-import { navigate } from 'gatsby';
+import { navigate, Link } from 'gatsby';
 
 interface Props {
 	currency: string;
@@ -59,23 +59,17 @@ const PricingPlans = ({ block, currency, custom, group, lesson, plans }: Props) 
 											<div className='card-title'>1-on-1 Sessions</div>
 											<div className='card-subtitle mb-5'>Block Booking</div>
 											<div className='card-text text-center'>
-												<button
-													className='btn btn-2 price'
-													onClick={() => navigate('/plans/plan1')}
-												>
+												<a href='/plans/plan1' target='_blank' className='btn btn-2 price'>
 													{currency}{' '}
 													<span className='strike'>{blockStrike.toLocaleString()}</span>
 													{blockAnnum.toLocaleString()} annually
-												</button>
+												</a>
 												<p className='mt-4'>
 													Or pay monthly
 													<br />
-													<button
-														className='btn btn-2 price'
-														onClick={() => navigate('/plans/plan1/')}
-													>
+													<a href='/plans/plan1' target='_blank' className='btn btn-2 price'>
 														{currency} {blockMonth.toLocaleString()}
-													</button>
+													</a>
 												</p>
 											</div>
 											<ul className='list-group list-group-flush text-start'>
@@ -97,23 +91,25 @@ const PricingPlans = ({ block, currency, custom, group, lesson, plans }: Props) 
 											<div className='card-subtitle mb-4'>2 - 5 students</div>
 											<div className='card-text text-center'>
 												<span>Price Per Student:</span>
-												<button
+												<a
+													href='/plans/plan2/'
+													target='_blank'
 													className='btn btn-primary price'
-													onClick={() => navigate('/plans/plan2/')}
 												>
 													{currency}{' '}
 													<span className='strike'>{groupStrike.toLocaleString()}</span>
 													{groupAnnum.toLocaleString()} annually
-												</button>
+												</a>
 												<p className='mt-4'>
 													Or pay monthly
 													<br />
-													<button
-														className='btn btn-2 price'
-														onClick={() => navigate('/plans/plan2/')}
+													<a
+														href='/plans/plan2/'
+														target='_blank'
+														className='btn btn-primary price'
 													>
 														{currency} {groupMonth.toLocaleString()}
-													</button>
+													</a>
 												</p>
 											</div>
 											<ul className='list-group list-group-flush text-start'>
@@ -134,12 +130,9 @@ const PricingPlans = ({ block, currency, custom, group, lesson, plans }: Props) 
 											<div className='card-title'>Individual Lessons</div>
 											<div className='card-subtitle mb-5'>Single Student</div>
 											<div className='card-text text-center'>
-												<button
-													className='btn btn-2 price'
-													onClick={() => navigate('/plans/plan3/')}
-												>
+												<a href='/plans/plan3/' target='_blank' className='btn btn-2 price'>
 													{currency} {single.toLocaleString()} per hour
-												</button>
+												</a>
 											</div>
 											<ul className='list-group list-group-flush text-start'>
 												{lesson.map(b => (
@@ -158,12 +151,9 @@ const PricingPlans = ({ block, currency, custom, group, lesson, plans }: Props) 
 										<div className='card-body'>
 											<div className='card-title'>Custom</div>
 											<div className='card-text text-center'>
-												<button
-													className='btn btn-2 price'
-													onClick={() => navigate('/plans/plan4/')}
-												>
+												<a href='/plans/plan4/' target='_blank' className='btn btn-2 price'>
 													Make your own plan
-												</button>
+												</a>
 											</div>
 											<ul className='list-group list-group-flush text-start'>
 												{custom.map(b => (
