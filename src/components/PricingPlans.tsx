@@ -3,7 +3,6 @@ import type { PlansPerLevel } from '../util/pricingPlans';
 import Layout from './Layout';
 import SEO from './SEO';
 import PricingSection from '../styles/PricingSection';
-import { navigate, Link } from 'gatsby';
 
 interface Props {
 	currency: string;
