@@ -165,10 +165,10 @@ const AboutPage = () => (
 				</p>
 				<p>So I dropped everything in favor of teaching.</p>
 				<p>
-					But, I soon realized that the lecture hall/ classroom setting was insufficient for unlocking the
-					learning potential of each student. Besides, I couldn’t reach as many students as I would have
-					liked, while in the confines of a classroom. So I decided to get out there and try to reach out to
-					as many students as possible.
+					While completing my Masters degree, I started teaching. But, I soon realized that the lecture hall/
+					classroom setting was insufficient for unlocking the learning potential of each student. Besides, I
+					couldn’t reach as many students as I would have liked, while in the confines of a classroom. So I
+					decided to get out there and try to reach out to as many students as possible.
 				</p>
 				<p>
 					Today, I have been teaching professionally for quite a few years and I am now dedicated to further
