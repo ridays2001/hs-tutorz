@@ -68,6 +68,21 @@ module.exports = {
 					]
 				}
 			}
+		},
+		{
+			resolve: 'gatsby-plugin-google-gtag',
+			options: {
+				trackingIds: [process.env.GATSBY_GTAG_ID],
+				gtagConfig: {
+					anonymize_ip: true,
+					cookie_expires: 0,
+					allow_google_signals: false
+				},
+				pluginConfig: {
+					head: true,
+					respectDNT: true
+				}
+			}
 		}
 	]
 };
