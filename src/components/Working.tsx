@@ -1,4 +1,3 @@
-import { Link } from 'gatsby';
 import type { CSSProperties } from 'react';
 import React, { Fragment } from 'react';
 import WorkStep from '../styles/WorkStep';
@@ -22,7 +21,11 @@ const Step = ({ border, color, icon, link, linkText, para, title, index }: StepP
 			<div className='col-md-6 col-lg-5'>
 				<h4 className='text-center'>{title}</h4>
 				{para}
-				{link && <Link to={link}>{linkText} ↗</Link>}
+				{link && (
+					<a href={link} target='_blank'>
+						{linkText} ↗
+					</a>
+				)}
 			</div>
 		</WorkStep>
 		{index !== 3 ? <ArrowDownIcon className='d-none d-md-inline my-3' width={48} height={48} /> : ''}
@@ -68,7 +71,7 @@ const steps: Array<StepType> = [
 				required!
 			</p>
 		),
-		link: '/contact',
+		link: '/plans/demo',
 		linkText: 'Book A Demo'
 	},
 	{

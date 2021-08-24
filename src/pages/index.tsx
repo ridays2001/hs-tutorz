@@ -65,9 +65,9 @@ const IndexPage = () => (
 				<div className='row mx-auto'>
 					<div className='row mx-auto justify-content-center my-3'>
 						<div className='text-center'>
-							<Link className='btn btn-primary btn-lg' to='/plans/demo'>
+							<a className='btn btn-primary btn-lg' href='/plans/demo' target='_blank'>
 								Book A Demo
-							</Link>
+							</a>
 						</div>
 					</div>
 
@@ -102,18 +102,18 @@ const IndexPage = () => (
 			</p>
 			<p>So don’t delay, Sign up to get better grades today!</p>
 			<section className='text-center mt-5'>
-				<Link className='btn btn-primary btn-lg' to='/plans/demo'>
+				<a className='btn btn-primary btn-lg' href='/plans/demo' target='_blank'>
 					Book A Demo
-				</Link>
+				</a>
 			</section>
 		</Intro>
 		<Working style={{ marginTop: '2em' }} />
 		<TutOpts />
 
 		<section className='text-center my-5'>
-			<Link className='btn btn-primary btn-lg' to='/plans/demo'>
+			<a className='btn btn-primary btn-lg' href='/plans/demo' target='_blank'>
 				Book A Demo
-			</Link>
+			</a>
 		</section>
 
 		{/* Testimonials */}

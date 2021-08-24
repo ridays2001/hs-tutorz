@@ -1,11 +1,10 @@
+import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
-import { RecordingIcon, GrowthIcon, StepUpIcon } from '../components/icons';
+import { GrowthIcon, RecordingIcon, StepUpIcon } from '../components/icons';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
-import { CompanySection, OfferingBox, FounderSection } from '../styles/AboutSection';
-import { StaticImage } from 'gatsby-plugin-image';
-import { Link } from 'gatsby';
 import Testimonials from '../components/Testimonials';
+import { CompanySection, FounderSection, OfferingBox } from '../styles/AboutSection';
 
 interface Offering {
 	icon: JSX.Element;
@@ -106,9 +105,9 @@ const AboutPage = () => (
 					</li>
 				</ul>
 				<section className='text-center mt-5'>
-					<Link className='btn btn-primary btn-lg' to='/plans/demo'>
+					<a className='btn btn-primary btn-lg' href='/plans/demo' target='_blank'>
 						Book A Demo
-					</Link>
+					</a>
 				</section>
 			</section>
 
@@ -131,9 +130,9 @@ const AboutPage = () => (
 		</CompanySection>
 
 		<section className='text-center my-5'>
-			<Link className='btn btn-primary btn-lg' to='/plans/demo'>
+			<a className='btn btn-primary btn-lg' href='/plans/demo' target='_blank'>
 				Book A Demo
-			</Link>
+			</a>
 		</section>
 
 		<h2 className='text-center my-3'>Founder's Corner</h2>
