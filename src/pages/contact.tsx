@@ -65,7 +65,7 @@ const ContactPage = () => {
 			<ContactSection className='col-md-9 mx-auto text-center'>
 				<h1 className='text-center my-5'>Get In Touch</h1>
 				<section className='row col-md-9 mx-auto'>
-					<div className='col-md-6'>
+					<div className='col-md-6 mx-auto'>
 						Email Us on <span className='highlight'>{process.env.GATSBY_EMAIL}</span>
 						<br />
 						or click on the button below:
@@ -75,20 +75,7 @@ const ContactPage = () => {
 							<EmailIcon /> &ensp; Email
 						</a>
 					</div>
-					<div className='col-md-6' id='num'>
-						Call or WhatsApp Us on <span className='highlight'>+91 {process.env.GATSBY_PHONE}</span>
-						<br />
-						or click on the button below:
-						<br />
-						<br />
-						<a
-							href={`https://wa.me/91${process.env.GATSBY_PHONE?.replace(/\s/g, '')}`}
-							target='_blank'
-							className='btn btn-primary'
-						>
-							<WhatsAppIcon /> &ensp; WhatsApp
-						</a>
-					</div>
+
 					<div className='col-12 my-5'>
 						Or you can fill the following contact form and we will get back to you within 24 hours.
 						<br />
